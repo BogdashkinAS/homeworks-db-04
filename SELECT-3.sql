@@ -1,4 +1,3 @@
-
 -- (Задача 1) Количество исполнителей в каждом жанре
 SELECT g.name AS Жанр, COUNT(a.name_author) AS Количество_исполнителей FROM genre g
 LEFT JOIN genre_author AS ga ON ga.genre_id = g.id
